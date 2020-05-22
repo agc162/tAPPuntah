@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EventoService } from 'src/app/service/evento.service';
+import { EventoPage } from 'src/app/evento/evento.page';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  follow: boolean = false;
-
+  follow = false;
   posts = [this.follow, this.follow, this.follow, this.follow, this.follow, this.follow, this.follow];
+  events;
 
-  constructor() { }
+  constructor(public evnSrv: EventoService) {
+    this.getAllEvents();
+  }
+
+  getAllEvents() {
+    this.evnSrv.getEvents().subscribe(res => this.events = res);
+  }
+
+  showEvent(item) {
+
+  }
 
   ngOnInit() {
   }

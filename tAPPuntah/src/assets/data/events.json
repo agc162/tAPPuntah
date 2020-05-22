@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "title": "Viña Rock",
+        "datePublic": "05-12-2019",
+        "dateEvent": "01-04-2020",
+        "description": "Conciertos de música rock y plan de ac...",
+        "image": "rock.png"
+    },
+    {
+        "id": 1,
+        "title": "Paellas UA",
+        "datePublic": "09-02-2020",
+        "dateEvent": "08-05-2020",           
+        "description": "Se busca a estudiantes de ingeniería in...",
+        "image": "paellas.png"
+    },
+    {
+        "id": 2,
+        "title": "Musical el Rey León",
+        "datePublic": "09-02-2020",
+        "dateEvent": "08-05-2020",           
+        "description": "Busco un acompañante para ver el fam...",
+        "image": "leon.png"
+    },
+    {
+        "id": 3,
+        "title": "Ir al cine",
+        "datePublic": "09-02-2020",
+        "dateEvent": "08-05-2020",           
+        "description": "Quiero ir acompañado al cine el día de...",
+        "image": "cine.png"
+    },
+    {
+        "id": 4,
+        "title": "Escalada",
+        "datePublic": "09-02-2020",
+        "dateEvent": "08-05-2020",           
+        "description": "Quiero montar un grupo para ir a escal...",
+        "image": "escalada.png"
+    }
+]

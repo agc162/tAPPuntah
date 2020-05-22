@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> tAPPuntah </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-text align="center" color="dark">
+    <h1>{{ name }}</h1>
+  </ion-text>
+  <ion-text align="center" color="medium">
+    <ion-date>
+      <h5>{{ date | date: 'dd/MM/yyyy' }} </h5> <!-- H:mm -->
+    </ion-date>
+  </ion-text>
+  <ion-img class="img-event" [src]="'assets/images/eventos/' + name + '.png'"></ion-img>
+  <div class="bell-img">
+    <ion-icon name="star-outline"></ion-icon>
+    <ion-icon name="chatbox-outline"></ion-icon>
+    <ion-label color="medium">Subido por mí</ion-label>
+  </div>
+
+  <div class="desc-event" >
+    {{ description }}
+  </div>
+  
+</ion-content>
