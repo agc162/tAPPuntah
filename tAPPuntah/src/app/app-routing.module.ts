@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'edit-event',
+    loadChildren: () => import('./edit-event/edit-event.module').then( m => m.EditEventPageModule)
   }
+
 
 ];
 @NgModule({
