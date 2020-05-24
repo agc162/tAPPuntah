@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'evento',
-    loadChildren: () => import('./Pages/Evento/evento.module').then( m => m.EventoPageModule)
+    path: 'eventos',
+    loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   }
 
 ];

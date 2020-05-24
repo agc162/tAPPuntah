@@ -4,17 +4,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content *ngIf="event">
   <ion-text align="center" color="dark">
-    <h1>{{ name }}</h1>
+    <h1>{{ event.title }}</h1>
   </ion-text>
   <ion-text align="center" color="medium">
     <ion-date>
-      <h5>{{ date | date: 'dd/MM/yyyy' }} </h5> <!-- H:mm -->
+      <!-- <h5>{{ date | date: 'dd/MM/yyyy' }} </h5>  -->
+      <h5>{{ event.dateEvent }}</h5>
     </ion-date>
   </ion-text>
-  <ion-img class="img-event" [src]="'assets/images/eventos/' + name + '.png'"></ion-img>
+  <ion-img class="img-event" [src]="'./assets/images/' + event.image"></ion-img>
   <div class="bell-img">
     <ion-icon name="star-outline"></ion-icon>
     <ion-icon name="chatbox-outline"></ion-icon>
@@ -22,7 +22,7 @@
   </div>
 
   <div class="desc-event" >
-    {{ description }}
+    {{ event.description }}
   </div>
   
 </ion-content>

@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class EventComponent {
 
   @Input()event: any;
+  // @Input() navigateTo: any;
 
   follow = false;
   posts = [this.follow, this.follow, this.follow, this.follow, this.follow, this.follow, this.follow];
@@ -15,7 +16,7 @@ export class EventComponent {
   constructor() { }
 
   generateURL(idEvent) {
-    return 'evento/' + idEvent;
+    return 'eventos/evento/' + idEvent;
   }
 
   doFollow(post: number){
