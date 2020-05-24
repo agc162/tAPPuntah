@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomePage } from 'src/app/home/home.page';
+import { HomePage } from 'src/app/Pages/Home/home.page';
 
 @Component({
   selector: 'app-evento',

@@ -1,3 +1,4 @@
+import { EventComponent } from './../../Components/event/event.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +16,9 @@ import { HomePage } from './home.page';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    EventComponent
+  ]
 })
 export class HomePageModule {}
