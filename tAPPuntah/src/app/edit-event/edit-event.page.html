@@ -30,9 +30,17 @@
             <ion-text color="warning">Introduce la fecha</ion-text>
         </p>
 
-        <ion-img style="width: 400px; height: 400px; margin-left: auto;
+        <ion-img style="width: 300px; height: 300px; margin-left: auto;
         margin-right: auto;" src="../../assets/images/rock.png"></ion-img>
 
+
+
+      <div style="text-align:center;">
+        <ion-button icon-left size="large" color="tertiary"
+        (click)="doLogin()" [disabled]="!loginForm.valid" tappable>
+        Cambiar imagen 
+        </ion-button>
+      </div>
         <ion-item>
           <ion-label position="floating">Descripción: </ion-label>
           <ion-input type="descripcion" formControlName="descripcion"></ion-input>
@@ -43,12 +51,13 @@
         </p>
 
      
-      <div style="text-align:center;">
-        <ion-button icon-left size="large" color="purple"
-         (click)="doLogin()" [disabled]="!loginForm.valid" tappable>
-        Entrar <ion-icon name="log-in"></ion-icon>
-        </ion-button>
-     </div>
+        <div style="text-align:center;">
+            <ion-button size="large" color="tertiary" style="margin:40px;">Guardar
+              </ion-button>            
+         
+            <ion-button size="large" color="danger" style="margin:40px;">Cancelar
+              </ion-button>
+            </div>
     </form>
   </div>
 </ion-content>
