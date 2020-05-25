@@ -1,3 +1,4 @@
+import { ComponentsModule } from './../../Components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { EventoPage } from './evento.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    EventoPageRoutingModule
+    EventoPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [EventoPage]
 })

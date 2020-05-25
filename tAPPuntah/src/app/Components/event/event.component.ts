@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
 export class EventComponent {
 
   @Input()event: any;
-  // @Input() navigateTo: any;
 
   follow = false;
   posts = [this.follow, this.follow, this.follow, this.follow, this.follow, this.follow, this.follow];

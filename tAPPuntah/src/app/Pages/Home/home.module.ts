@@ -1,3 +1,4 @@
+import { ComponentsModule } from './../../Components/components.module';
 import { EventComponent } from './../../Components/event/event.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,7 +15,8 @@ import { HomePage } from './home.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    ComponentsModule
   ],
   declarations: [
     HomePage,

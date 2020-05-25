@@ -20,15 +20,11 @@ export class EventoPage implements OnInit {
   ) { }
 
   ionViewWillEnter() {
-    // this.event = this.activedRoute.snapshot.paramMap.get('idEvent');
     this.activedRoute.paramMap.subscribe(
       (params: ParamMap) => {
         this.idEvent = params.get('idEvento');
       }
     )
-
-    // this.srvEvent.getEvents().subscribe((datos: any[]) => this.events = datos);
-    // this.event = this.srvEvent.getEventsById(this.idEvent); // .subscribe((datos: Event) => this.event = datos);
 
     this.srvEvent.getEvents().subscribe((datos: Event[]) => {
       for (const item of datos) {
