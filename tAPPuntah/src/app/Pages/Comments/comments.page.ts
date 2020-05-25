@@ -1,3 +1,4 @@
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Event } from 'src/app/Models/Event/event.model';
 import { Comment } from './../../Models/Comment/comment.model';
 import { EventoService } from 'src/app/Services/Event/evento.service';
@@ -16,11 +17,14 @@ export class CommentsPage {
   title: string;
   date: string;
   image: string;
+  cantComments: number;
+  nuevoComent;
 
   constructor(
     private activedRoute: ActivatedRoute,
     private srvEvent: EventoService
-  ) { }
+  ) {
+  }
 
   ionViewWillEnter() {
     this.activedRoute.paramMap.subscribe(
@@ -36,6 +40,7 @@ export class CommentsPage {
         // tslint:disable-next-line: triple-equals
         if(item.id == this.idEvent) {
           this.comments = item.commments;
+          this.cantComments = item.commments.length;
           this.title = item.title;
           this.image = item.image;
           this.date = item.dateEvent;
@@ -44,5 +49,9 @@ export class CommentsPage {
     });
   }
 
+  mandarComentario() {
+
+    console.log('Mandando comentario...'+ this.nuevoComent);
+  }
 
 }
