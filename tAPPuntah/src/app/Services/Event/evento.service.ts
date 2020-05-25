@@ -1,7 +1,7 @@
+import { Comment } from './../../Models/Comment/comment.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Event } from 'src/app/Models/Event/event.model';
-import { Comment } from 'src/app/Models/Comment/comment.model';
 
 @Injectable({
   providedIn: 'root'

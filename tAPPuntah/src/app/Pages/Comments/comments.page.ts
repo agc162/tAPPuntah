@@ -1,4 +1,3 @@
-import { FormBuilder, FormGroup } from '@angular/forms';
 import { Event } from 'src/app/Models/Event/event.model';
 import { Comment } from './../../Models/Comment/comment.model';
 import { EventoService } from 'src/app/Services/Event/evento.service';
@@ -19,6 +18,7 @@ export class CommentsPage {
   image: string;
   cantComments: number;
   nuevoComent;
+  addComment : any = {};
 
   constructor(
     private activedRoute: ActivatedRoute,
@@ -50,8 +50,15 @@ export class CommentsPage {
   }
 
   mandarComentario() {
+    this.addComment.user = '@User123'
+    this.addComment.comment = this.nuevoComent;
+    this.addComment.avatar = 'user.png';
+    this.addComment.date = '12:00';
 
     console.log('Mandando comentario...'+ this.nuevoComent);
+    this.comments.push(this.addComment);
+    this.cantComments = this.comments.length;
+    this.nuevoComent = '';
   }
 
 }
