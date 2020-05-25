@@ -5,7 +5,39 @@
         "datePublic": "05-12-2019",
         "dateEvent": "01-04-2020",
         "description": "Conciertos de música rock y plan de ac...",
-        "image": "rock.png"
+        "image": "rock.png",
+        "commments": [
+            {
+                "user" : "@DonJC",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "10:45"
+            },
+            {
+                "user" : "@Mel",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:00"
+            },
+            {
+                "user" : "@Dragón",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:15"
+            },
+            {
+                "user" : "@Alvaro",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:20"
+            },
+            {
+                "user" : "@Alicia",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:35"
+            }
+        ]
     },
     {
         "id": 1,
@@ -13,7 +45,39 @@
         "datePublic": "09-02-2020",
         "dateEvent": "08-05-2020",           
         "description": "Se busca a estudiantes de ingeniería in...",
-        "image": "paellas.png"
+        "image": "paellas.png",
+        "commments": [
+            {
+                "user" : "@DonJC",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "10:45"
+            },
+            {
+                "user" : "@Mel",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:00"
+            },
+            {
+                "user" : "@Dragón",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:15"
+            },
+            {
+                "user" : "@Alvaro",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:20"
+            },
+            {
+                "user" : "@Alicia",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:35"
+            }
+        ]
     },
     {
         "id": 2,
@@ -21,7 +85,39 @@
         "datePublic": "09-02-2020",
         "dateEvent": "08-05-2020",           
         "description": "Busco un acompañante para ver el fam...",
-        "image": "leon.png"
+        "image": "leon.png",
+        "commments": [
+            {
+                "user" : "@DonJC",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "10:45"
+            },
+            {
+                "user" : "@Mel",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:00"
+            },
+            {
+                "user" : "@Dragón",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:15"
+            },
+            {
+                "user" : "@Alvaro",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:20"
+            },
+            {
+                "user" : "@Alicia",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:35"
+            }
+        ]
     },
     {
         "id": 3,
@@ -29,7 +125,39 @@
         "datePublic": "09-02-2020",
         "dateEvent": "08-05-2020",           
         "description": "Quiero ir acompañado al cine el día de...",
-        "image": "cine.png"
+        "image": "cine.png",
+        "commments": [
+            {
+                "user" : "@DonJC",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "10:45"
+            },
+            {
+                "user" : "@Mel",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:00"
+            },
+            {
+                "user" : "@Dragón",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:15"
+            },
+            {
+                "user" : "@Alvaro",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:20"
+            },
+            {
+                "user" : "@Alicia",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:35"
+            }
+        ]
     },
     {
         "id": 4,
@@ -37,6 +165,38 @@
         "datePublic": "09-02-2020",
         "dateEvent": "08-05-2020",           
         "description": "Quiero montar un grupo para ir a escal...",
-        "image": "escalada.png"
+        "image": "escalada.png",
+        "commments": [
+            {
+                "user" : "@DonJC",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "10:45"
+            },
+            {
+                "user" : "@Mel",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:00"
+            },
+            {
+                "user" : "@Dragón",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:15"
+            },
+            {
+                "user" : "@Alvaro",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "h.png",
+                "date": "11:20"
+            },
+            {
+                "user" : "@Alicia",
+                "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+                "avatar": "m.png",
+                "date": "11:35"
+            }
+        ]
     }
 ]

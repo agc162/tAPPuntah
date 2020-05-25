@@ -18,6 +18,10 @@ export class EventComponent {
     return 'eventos/evento/' + idEvent;
   }
 
+  generateURLComment(idEvent) {
+    return 'eventos/evento/' + idEvent + '/comments';
+  }
+
   doFollow(post: number){
     if(!this.posts[post]){
       this.posts[post]=true;

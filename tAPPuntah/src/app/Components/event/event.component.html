@@ -15,7 +15,7 @@
     <ion-button *ngIf="posts[0]" slot="end" color="warning" (click)="doUnfollow(0)">
       <ion-icon name="star-outline"></ion-icon>
     </ion-button>
-    <ion-button fill="outline" slot="end" color="primary">
+    <ion-button [href]="generateURLComment(event.id)" fill="outline" slot="end" color="primary">
       <ion-icon name="chatbubble-outline"></ion-icon>
     </ion-button>
     <ion-button [href]="generateURL(event.id)" fill="outline" slot="end" color="medium">

@@ -18,8 +18,4 @@ export class HomePage {
     this.evnSrv.getEvents().subscribe((datos: any[]) => this.events = datos);
   }
 
-  showEvent(item) {
-
-  }
-
 }

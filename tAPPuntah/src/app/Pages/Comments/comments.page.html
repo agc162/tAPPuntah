@@ -1,0 +1,22 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <ion-card-header>
+    <img [src]="'./assets/images/' + image" /> 
+    
+    <ion-label color="dark" >
+      <h1>{{ title }}</h1>
+    </ion-label>
+    <ion-label color="medium" >
+      <h2>{{ date }}</h2>
+    </ion-label>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list>
+        <app-comment *ngFor="let item of comments" [comment]="item">
+
+        </app-comment>
+    </ion-list>
+</ion-card-content>
+</ion-content>
