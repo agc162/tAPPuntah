@@ -9,7 +9,15 @@ const routes: Routes = [
   {
     path: 'eventos',
     loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'perfil',
+    loadChildren: () => import('./Pages/Pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./Pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   }
+
 
 ];
 @NgModule({
