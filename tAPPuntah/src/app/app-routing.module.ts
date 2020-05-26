@@ -3,12 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  {
     path: '',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'edit-event',
@@ -17,9 +13,11 @@ const routes: Routes = [
   {
     path: 'choose-image',
     loadChildren: () => import('./choose-image/choose-image.module').then( m => m.ChooseImagePageModule)
+  },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   }
-
-
 ];
 @NgModule({
   imports: [
