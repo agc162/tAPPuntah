@@ -2,7 +2,8 @@
     {
         "id": 0,
         "title": "Viña Rock",
-        "datePublic": "Publicado: 05-12-2019",
+        "user": "@Mel",
+        "datePublic": "05-12-2019",
         "dateEvent": "01-04-2020",
         "description": "Conciertos de música rock y plan de ac...",
         "image": "rock.png",
@@ -20,13 +21,13 @@
                 "date": "11:00"
             },
             {
-                "user" : "@Dragón",
+                "user" : "@Dragon",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
-                "user" : "@Alvaro",
+                "user" : "@Prieto",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:20"
@@ -42,7 +43,8 @@
     {
         "id": 1,
         "title": "Paellas UA",
-        "datePublic": "Publicado: 09-02-2020",
+        "user": "@DonJC",
+        "datePublic": "09-02-2020",
         "dateEvent": "08-05-2020",           
         "description": "Se busca a estudiantes de ingeniería in...",
         "image": "paellas.png",
@@ -60,13 +62,13 @@
                 "date": "11:00"
             },
             {
-                "user" : "@Dragón",
+                "user" : "@Dragon",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
-                "user" : "@Alvaro",
+                "user" : "@Prieto",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:20"
@@ -82,7 +84,8 @@
     {
         "id": 2,
         "title": "Musical el Rey León",
-        "datePublic": "Publicado: 09-02-2020",
+        "user": "@Prieto",
+        "datePublic": "09-02-2020",
         "dateEvent": "08-05-2020",           
         "description": "Busco un acompañante para ver el fam...",
         "image": "leon.png",
@@ -100,13 +103,13 @@
                 "date": "11:00"
             },
             {
-                "user" : "@Dragón",
+                "user" : "@Dragon",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
-                "user" : "@Alvaro",
+                "user" : "@Prieto",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:20"
@@ -122,7 +125,8 @@
     {
         "id": 3,
         "title": "Ir al cine",
-        "datePublic": "Publicado: 09-02-2020",
+        "user": "@Alicia",
+        "datePublic": "09-02-2020",
         "dateEvent": "08-05-2020",           
         "description": "Quiero ir acompañado al cine el día de...",
         "image": "cine.png",
@@ -140,13 +144,13 @@
                 "date": "11:00"
             },
             {
-                "user" : "@Dragón",
+                "user" : "@Dragon",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
-                "user" : "@Alvaro",
+                "user" : "@Prieto",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:20"
@@ -162,7 +166,8 @@
     {
         "id": 4,
         "title": "Escalada",
-        "datePublic": "Publicado: 09-02-2020",
+        "user": "@Dragon",
+        "datePublic": "09-02-2020",
         "dateEvent": "08-05-2020",           
         "description": "Quiero montar un grupo para ir a escal...",
         "image": "escalada.png",
@@ -180,13 +185,13 @@
                 "date": "11:00"
             },
             {
-                "user" : "@Dragón",
+                "user" : "@Dragon",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
-                "user" : "@Alvaro",
+                "user" : "@Prieto",
                 "comment": "Lorem ipsum dolor sit amet consectetuer",
                 "avatar": "h.png",
                 "date": "11:20"
