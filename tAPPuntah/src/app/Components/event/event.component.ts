@@ -15,11 +15,11 @@ export class EventComponent {
   constructor() { }
 
   generateURL(idEvent) {
-    return 'eventos/evento/' + idEvent;
+    return 'tAPPuntah/evento/' + idEvent;
   }
 
   generateURLComment(idEvent) {
-    return 'eventos/evento/' + idEvent + '/comments';
+    return 'tAPPuntah/evento/' + idEvent + '/comments';
   }
 
   doFollow(post: number){

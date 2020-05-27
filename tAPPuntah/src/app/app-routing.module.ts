@@ -7,9 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'eventos',
+    path: 'tAPPuntah',
     loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   }
+
 ];
 @NgModule({
   imports: [
