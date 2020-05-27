@@ -1,3 +1,4 @@
+import { HomePage } from './../Home/home.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -17,11 +18,11 @@ import { PerfilPage } from './perfil.page';
     IonicModule,
     PerfilPageRoutingModule,
     ComponentsModule,
-    EventComponent
+    // EventComponent
   ],
   declarations: [
     PerfilPage,
-    EventComponent
+    // EventComponent
   ]
 })
 export class PerfilPageModule {}

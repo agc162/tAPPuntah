@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { EventoService } from '../../Services/Event/evento.service';
+import { Event } from 'src/app/Models/Event/event.model';
 
 @Component({
   selector: 'app-perfil',
@@ -8,16 +9,48 @@ import { EventoService } from '../../Services/Event/evento.service';
 })
 export class PerfilPage {
 
-  events = [];
+  events: Event[] = [];
 
   constructor(public evnSrv: EventoService) {
-    this.getMeEvents();
+     this.getMeEvents();
   }
 
   getMeEvents() {
-    this.evnSrv.getEvents().subscribe((datos: any[]) => {
-      this.events = datos.filter((dato) => dato.user == '@DonJC')  
+    this.evnSrv.getEvents().subscribe((datos: Event[]) => {
+      for (const item of datos) {
+        console.log('[Evento] ' + item.user)
+        if(item.user === '@Mel') {
+          console.log('[ffEvento] ' + item.user)
+          this.events.push(item);
+        }
+      }
     });
+  }
+
+
+  // Event
+
+  follow = false;
+  posts = [this.follow, this.follow, this.follow, this.follow, this.follow, this.follow, this.follow];
+
+  generateURL(idEvent) {
+    return 'tAPPuntah/evento/' + idEvent;
+  }
+
+  generateURLComment(idEvent) {
+    return 'tAPPuntah/evento/' + idEvent + '/comments';
+  }
+
+  doFollow(post: number){
+    if(!this.posts[post]){
+      this.posts[post]=true;
+    }
+  }
+
+  doUnfollow(post: number){
+    if(this.posts[post]){
+      this.posts[post]=false;
+    }
   }
 
 }

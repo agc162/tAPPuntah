@@ -7,15 +7,16 @@ const routes: Routes = [
   {
     path: '',
     component: PerfilPage
-  },
-  {
-    path: 'evento/:idEvento',
-    loadChildren: () => import('../Evento/evento-module').then( m => m.EventoPageModule)
-  },
-  {
-    path: 'evento/:idEvento/comments',
-    loadChildren: () => import('../Comments/comments.module').then( m => m.CommentsPageModule)
   }
+  // ,
+  // {
+  //   path: 'evento/:idEvento',
+  //   loadChildren: () => import('../Evento/evento-module').then( m => m.EventoPageModule)
+  // },
+  // {
+  //   path: 'evento/:idEvento/comments',
+  //   loadChildren: () => import('../Comments/comments.module').then( m => m.CommentsPageModule)
+  // }
 ];
 
 @NgModule({
