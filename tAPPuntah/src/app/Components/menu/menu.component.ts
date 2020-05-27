@@ -8,12 +8,19 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(public router: Router) { }
+  constructor(public router: Router) {
+    console.log('path: ' + this.router.url);
+   }
 
   ngOnInit() {}
 
   isEventPage(): boolean {
     return this.router.url.includes('eventos/evento');
+  }
+
+  public goEditPage() {
+    this.router.navigateByUrl(this.router.url + '/' + 'editEvent');
+
   }
 
 

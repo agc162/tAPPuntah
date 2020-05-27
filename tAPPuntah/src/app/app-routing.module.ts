@@ -7,12 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'edit-event',
-    loadChildren: () => import('./edit-event/edit-event.module').then( m => m.EditEventPageModule)
-  },
-  {
     path: 'choose-image',
-    loadChildren: () => import('./choose-image/choose-image.module').then( m => m.ChooseImagePageModule)
+    loadChildren: () => import('./Pages/choose-image/choose-image.module').then( m => m.ChooseImagePageModule)
   },
   {
     path: 'eventos',

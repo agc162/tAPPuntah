@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>tAPPuntah</ion-title>
+    <ion-thumbnail slot="start">
+      <img src="../../assets/images/user.png" class="profile">
+    </ion-thumbnail>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="event">
+  <div class="ion-padding">
+       
+    <form (ngSubmit)="editarEvento()"></form>
+        <ion-item>
+          <ion-label position="floating">Título: </ion-label>
+          <br>
+          <ion-input type="text"  [(ngModel)]="nuevoTitulo" name="nuevoTitulo">{{event.title}} -> </ion-input>
+        </ion-item>
+      
+
+        <ion-item>
+          <ion-label position="floating">Fecha: </ion-label>
+          <br>
+          <ion-input type="text" [(ngModel)]="nuevaFecha" name="nuevaFecha">{{event.dateEvent}} -> </ion-input>
+        </ion-item>
+       
+
+        <ion-img style="width: 300px; height: 300px; margin-left: auto;
+        margin-right: auto;" src="../../assets/images/rock.png"></ion-img>
+
+
+
+      <div style="text-align:center;">
+        <ion-button icon-left size="large" color="tertiary"
+        (click)="doLogin()" >
+        Cambiar imagen 
+        </ion-button>
+      </div>
+        <ion-item>
+          <ion-label position="floating">Descripción: </ion-label>
+          <br>
+          <ion-input type="text" [(ngModel)]="nuevaDescripcion" name="nuevaDescripcion"></ion-input>
+        </ion-item>
+        
+
+     
+        <div style="text-align:center;">
+            <ion-button  (click)="editarEvento()" size="large" color="tertiary" style="margin:10px;">Guardar
+              </ion-button>            
+         
+            <ion-button size="large" color="danger" style="margin:10px;">Cancelar
+              </ion-button>
+            </div>
+  </div>
+</ion-content>

@@ -28,7 +28,7 @@ export class EventoPage implements OnInit {
 
     this.srvEvent.getEvents().subscribe((datos: Event[]) => {
       for (const item of datos) {
-        if(item.id == this.idEvent) {
+        if(item.id === this.idEvent) {
           this.event = item;
         }
       }
