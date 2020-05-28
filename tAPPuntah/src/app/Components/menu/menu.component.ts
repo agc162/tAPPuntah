@@ -19,7 +19,7 @@ export class MenuComponent implements OnInit {
 
   public goEditPage() {
     //console.log('nextPage: ' + this.router.url + '/' + 'editEvent' );
-    //this.router.navigateByUrl(this.router.url + '/' + 'editEvent');
+    this.router.navigateByUrl(this.router.url + '/' + 'editEvent');
 
   }
 

@@ -53,10 +53,10 @@ export class EditEventPage {
   editarEvento(){
     let nuevaRuta;
     if(this.editado==true){
-      nuevaRuta = 'eventos/evento/new'+this.idEvent;
+      nuevaRuta = 'tAPPuntah/evento/new'+this.idEvent;
     }
     else{
-      nuevaRuta = 'eventos/evento/'+this.idEvent;
+      nuevaRuta = 'tAPPuntah/evento/'+this.idEvent;
     }
     this.route.navigateByUrl(nuevaRuta);
   }

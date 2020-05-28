@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { EventoService } from '../../Services/Event/evento.service';
 import { Event } from 'src/app/Models/Event/event.model';
@@ -11,10 +12,22 @@ export class PerfilPage {
 
   events: Event[] = [];
 
-  constructor(public evnSrv: EventoService) {
+
+  newEvent: Event;
+  constructor(public evnSrv: EventoService, public router: Router) {
      this.getMeEvents();
   }
 
+  hayAdd(){
+    let res:boolean;
+    if(this.router.url.includes('Add')){
+      res=true;
+    }
+    else{
+      res=false;
+    }
+    return res;
+  }
   getMeEvents() {
     this.evnSrv.getEvents().subscribe((datos: Event[]) => {
       for (const item of datos) {
@@ -23,6 +36,10 @@ export class PerfilPage {
         }
       }
     });
+  }
+
+  goCreateEvent(){
+    this.router.navigateByUrl('evento/crearEvento')
   }
 
 

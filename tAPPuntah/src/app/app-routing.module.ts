@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'edit-Profile',
     loadChildren: () => import('./Pages/edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
+  },
+  {
+    path: 'evento/crearEvento',
+    loadChildren: () => import('./Pages/create-event/create-event.module').then( m => m.CreateEventPageModule)
   }
 ];
 @NgModule({

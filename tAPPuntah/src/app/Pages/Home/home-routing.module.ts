@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('../Perfil/perfil.module').then( m => m.PerfilPageModule)
   },
   {
+    path: 'perfilAdd',
+    loadChildren: () => import('../Perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
     path: 'evento/:idEvento',
     loadChildren: () => import('../Evento/evento-module').then( m => m.EventoPageModule)
   },
