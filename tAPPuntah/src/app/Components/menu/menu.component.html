@@ -1,7 +1,6 @@
-<a href="/tAPPuntah">
   <ion-header>
     <ion-toolbar color="tertiary">
-      <ion-title>tAPPuntah</ion-title>
+        <a href="tAPPuntah"><ion-title>tAPPuntah</ion-title></a>
       <ion-thumbnail slot="start">
         <a href="tAPPuntah/perfil" >
           <img src="../../assets/images/user.png" class="profile">
@@ -12,9 +11,11 @@
           <p style="font-size: small;">DonJC</p>
         </a>
       </ion-thumbnail>
-      <ion-thumbnail slot="end" size="large">
-        <ion-icon item-right name="ellipsis-vertical-outline"></ion-icon>
+      <ion-thumbnail *ngIf="isEventPage()" slot="end" size="large">
+        <ion-button color="tertiary" fill="solid" (click)="goEditPage()">
+        <ion-icon item-right name="create-outline">
+        </ion-icon>
+      </ion-button>
       </ion-thumbnail>
     </ion-toolbar>
   </ion-header>
-</a>

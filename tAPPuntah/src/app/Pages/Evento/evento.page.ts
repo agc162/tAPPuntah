@@ -13,6 +13,7 @@ export class EventoPage implements OnInit {
   idEvent: string;
   event: Event = null;
   events = [];
+  editado: Boolean = false;
 
   constructor(
     private activedRoute: ActivatedRoute,
@@ -25,11 +26,17 @@ export class EventoPage implements OnInit {
         this.idEvent = params.get('idEvento');
       }
     )
-
+    if(this.idEvent.includes('new')){
+      this.editado=true;
+      this.idEvent=this.idEvent.replace('new','');
+    }
     this.srvEvent.getEvents().subscribe((datos: Event[]) => {
       for (const item of datos) {
         if(item.id == this.idEvent) {
           this.event = item;
+          if(this.editado == true){
+            this.event.image='2'+this.event.image;
+          }
         }
       }
     });

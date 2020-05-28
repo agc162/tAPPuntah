@@ -208,47 +208,5 @@
                 "date": "11:35"
             }
         ]
-    },
-    {
-        "id": 5,
-        "title": "Paellas UA",
-        "user": "@DonJC",
-        "datePublic": "09-02-2020",
-        "dateEvent": "08-05-2020",           
-        "description": "Se busca a estudiantes de ingeniería in...",
-        "image": "paellas.png",
-        "like":false,
-        "commments": [
-            {
-                "user" : "@DonJC",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "10:45"
-            },
-            {
-                "user" : "@Mel",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "m.png",
-                "date": "11:00"
-            },
-            {
-                "user" : "@Dragon",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "11:15"
-            },
-            {
-                "user" : "@Prieto",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "11:20"
-            },
-            {
-                "user" : "@Alicia",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "m.png",
-                "date": "11:35"
-            }
-        ]
     }
 ]

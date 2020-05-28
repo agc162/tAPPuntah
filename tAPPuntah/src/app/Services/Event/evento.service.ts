@@ -17,6 +17,9 @@ export class EventoService {
   getEvents() {
     return this.http.get('./../../assets/data/events.json');
   }
+  postEvents(nuevoArray: Event[]){
+    return this.http.post('./../../assets/data/events.json', nuevoArray);
+  }
 
   getEventUser(user: string) : Event[] {
     this.getEvents().subscribe((datos: Event[]) => {

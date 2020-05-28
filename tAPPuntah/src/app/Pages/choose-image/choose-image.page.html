@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Galeria</ion-title>
+    <ion-thumbnail slot="start">
+      <img src="../../assets/images/user.png" class="profile">
+    </ion-thumbnail>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="ion-padding">
+       
+       <br><br><br><br>
+        <ion-img style="width: 425px; height: 425px; margin-left: auto; margin-top:inherit;
+        margin-right: auto; align-items:center;" src="../../assets/images/3{{pathImg}}"></ion-img>
+
+
+      <br>
+      <div style="text-align:center;">
+        <ion-button icon-left size="large" color="tertiary"
+        (click)="vistaEvento()" >
+        Seleccionar imagen 
+        </ion-button>
+      </div>
+      
+  </div>
+</ion-content>

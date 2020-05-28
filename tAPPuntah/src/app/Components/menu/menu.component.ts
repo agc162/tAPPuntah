@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,8 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) {
+   }
 
   ngOnInit() {}
+
+  isEventPage(): boolean {
+    return this.router.url.includes('tAPPuntah/evento');
+  }
+
+  public goEditPage() {
+    //console.log('nextPage: ' + this.router.url + '/' + 'editEvent' );
+    this.router.navigateByUrl(this.router.url + '/' + 'editEvent');
+
+  }
+
 
 }
