@@ -9,8 +9,6 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
   login: any;
-  formulario:boolean = true;
-  resultado:boolean = false;
 
   constructor(private fb: FormBuilder, private router: Router) {
     this.login = this.fb.group({
