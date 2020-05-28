@@ -1,0 +1,66 @@
+<ion-content>
+  <form [formGroup]="edit">
+
+    <ion-item no-padding class="animated fadeInUp" class="image">
+      <ion-img position="floating" src="../../../assets/images/user.png" *ngIf="imagen" ></ion-img>
+      <ion-img position="floating" src="../../../assets/images/user2.png" *ngIf="imagen2" ></ion-img>
+      <ion-img position="floating" src="../../../assets/images/nouser.png" *ngIf="imagenNoUser" ></ion-img>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button class="leftButton" (click)="doCambioImagen()">Cambiar imagen</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="rightButton" (click)="doEliminarImagen()">Eliminar imagen</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-item no-padding class="animated fadeInUp" class="item">
+      <ion-label position="floating">
+        Nombre
+      </ion-label>
+      <ion-input color="secondary" value="DonJC"></ion-input>
+    </ion-item>
+
+    <ion-item  no-padding class="animated fadeInUp" class="item">
+      <ion-label position="floating">
+        Lema
+      </ion-label>
+      <ion-input color="secondary" value="Todos podemos convertirnos en héroes."></ion-input>
+    </ion-item>
+
+
+    <ion-item no-padding class="animated fadeInUp" class="item">
+      <ion-datetime displayFormat="DD MM YYYY" placeholder="Fecha de nacimiento" position="floating" value="09 23 1998"></ion-datetime>
+      <ion-input color="secondary"></ion-input>
+    </ion-item>
+
+    <ion-item no-padding class="animated fadeInUp" class="item">
+      <ion-select position="floating" placeholder="Genero" value="Masculino">
+        <ion-select-option>Masculino</ion-select-option>
+        <ion-select-option>Femenino</ion-select-option>
+        <ion-select-option>Otro</ion-select-option>
+      </ion-select>
+      <ion-input color="secondary" ></ion-input>
+    </ion-item>
+
+    <ion-item no-padding class="animated fadeInUp" class="item">
+      <ion-select position="floating" placeholder="Idioma" value="Español">
+        <ion-select-option>Español</ion-select-option>
+        <ion-select-option>Inglés</ion-select-option>
+        <ion-select-option>Italiano</ion-select-option>
+      </ion-select>
+      <ion-input color="secondary"></ion-input>
+    </ion-item>
+
+
+    <div>
+      <ion-button icon-left size="medium" expand="full" shape="round" color="dark" (click)="doEdit()" tappable>
+        <ion-icon name="log-in"></ion-icon>
+        Confirmar
+      </ion-button>
+    </div>
+  </form>
+</ion-content>
+

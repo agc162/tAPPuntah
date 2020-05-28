@@ -1,0 +1,38 @@
+<ion-content style="--ion-background-color:#6C3483">
+  <div class="title"><h1>tAPPuntah</h1></div>
+  <form [formGroup]="login">
+    <ion-item  no-padding class="animated fadeInUp" class="item">
+      <ion-label position="floating">
+        <ion-icon name="mail" item-start></ion-icon>
+        Tu correo
+      </ion-label>
+      <ion-input color="secondary" type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <p ion-text class="text08" *ngIf="login.get('email').touched && login.get('email').hasError('validator')">
+      <ion-text color="warning">
+        El email no es correcto
+      </ion-text>
+    </p>
+
+    <ion-item no-padding class="animated fadeInUp" class="item">
+      <ion-label position="floating">
+        <ion-icon name="lock-closed" item-start></ion-icon>
+        Tu contraseña
+      </ion-label>
+      <ion-input color="secondary" type="email" formControlName="clave"></ion-input>
+    </ion-item>
+    <p ion-text class="text08" *ngIf="login.get('clave').touched && login.get('clave').hasError('validator')">
+      <ion-text color="warning">
+        La contraseña no es correcta
+      </ion-text>
+    </p>
+
+    <div>
+      <ion-button icon-left size="medium" expand="full" shape="round" color="dark" (click)="doLogin()" [disabled]="!login.valid" tappable>
+        <ion-icon name="log-in"></ion-icon>
+        Entrar
+      </ion-button>
+    </div>
+  </form>
+</ion-content>
+
