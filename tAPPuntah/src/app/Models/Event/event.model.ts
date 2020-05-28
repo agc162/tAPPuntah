@@ -8,5 +8,6 @@ export interface Event extends Array<Comment> {
     dateEvent: string,
     description: string,
     image: string,
+    like: boolean;
     commments: Comment[]
 }

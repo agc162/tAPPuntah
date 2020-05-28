@@ -18,9 +18,7 @@ export class PerfilPage {
   getMeEvents() {
     this.evnSrv.getEvents().subscribe((datos: Event[]) => {
       for (const item of datos) {
-        console.log('[Evento] ' + item.user)
-        if(item.user === '@Mel') {
-          console.log('[ffEvento] ' + item.user)
+        if(item.user === '@DonJC') {
           this.events.push(item);
         }
       }
@@ -30,9 +28,6 @@ export class PerfilPage {
 
   // Event
 
-  follow = false;
-  posts = [this.follow, this.follow, this.follow, this.follow, this.follow, this.follow, this.follow];
-
   generateURL(idEvent) {
     return 'tAPPuntah/evento/' + idEvent;
   }
@@ -41,16 +36,19 @@ export class PerfilPage {
     return 'tAPPuntah/evento/' + idEvent + '/comments';
   }
 
-  doFollow(post: number){
-    if(!this.posts[post]){
-      this.posts[post]=true;
+  doFollow(post: string){
+    for (const item of this.events) {
+      if(item.id === post) {
+        item.like = true;
+      }
     }
   }
 
-  doUnfollow(post: number){
-    if(this.posts[post]){
-      this.posts[post]=false;
+  doUnfollow(post: string){
+    for (const item of this.events) {
+      if(item.id === post) {
+        item.like = false;
+      }
     }
   }
-
 }

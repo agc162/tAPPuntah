@@ -10,10 +10,10 @@
     <p>{{ event.description }}</p>
   </ion-label>
   <div class="buttonsItem">
-    <ion-button *ngIf="!posts[0]" fill="outline" slot="end" color="warning" (click)="doFollow(0)">
+    <ion-button *ngIf="!event.like" fill="outline" slot="end" color="warning" (click)="event.like=true">
       <ion-icon name="star-outline"></ion-icon>
     </ion-button>
-    <ion-button *ngIf="posts[0]" slot="end" color="warning" (click)="doUnfollow(0)">
+    <ion-button *ngIf="event.like" slot="end" color="warning" (click)="event.like=false">
       <ion-icon name="star-outline"></ion-icon>
     </ion-button>
     <ion-button [href]="generateURLComment(event.id)" fill="outline" slot="end" color="primary">
