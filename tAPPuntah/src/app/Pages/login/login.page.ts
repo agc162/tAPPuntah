@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginPage implements OnInit {
   formulario:boolean = true;
   resultado:boolean = false;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.login = this.fb.group({
       email: ['', Validators.compose([Validators.required, Validators.email])],
       clave: ['', Validators.compose([Validators.required, Validators.minLength(6)])]
@@ -22,7 +23,9 @@ export class LoginPage implements OnInit {
   }
 
   doLogin(){
-    
+    if(this.login.value.email == "gcs@ua.es" && this.login.value.clave == "123456"){
+      this.router.navigateByUrl('/tAPPuntah');
+    }
   }
 
 }

@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./Pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'tAPPuntah',
