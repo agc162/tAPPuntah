@@ -1,17 +1,24 @@
-<ion-header>
-  <ion-toolbar color="tertiary">
-    <ion-title>tAPPuntah</ion-title>
-    <ion-thumbnail slot="start">
-      <a href="/eventos" >
-        <img src="../../assets/images/user.png" class="profile">
-      </a>
-    </ion-thumbnail>
-      <ion-thumbnail *ngIf="isEventPage()" slot="end" size="large">
+<a href="/tAPPuntah">
+  <ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-title>tAPPuntah</ion-title>
+      <ion-thumbnail slot="start">
+        <a href="tAPPuntah/perfil" >
+          <img src="../../assets/images/user.png" class="profile">
+        </a>
+      </ion-thumbnail>
+      <ion-thumbnail slot="start">
+        <a href="tAPPuntah/perfil" >
+          <p style="font-size: small;">DonJC</p>
+        </a>
+      </ion-thumbnail>
+       <ion-thumbnail *ngIf="isEventPage()" slot="end" size="large">
         
         <ion-button color="tertiary" fill="solid" (click)="goEditPage()">
         <ion-icon item-right name="create-outline">
         </ion-icon>
       </ion-button>
       </ion-thumbnail>
-  </ion-toolbar>
-</ion-header>
+    </ion-toolbar>
+  </ion-header>
+</a>

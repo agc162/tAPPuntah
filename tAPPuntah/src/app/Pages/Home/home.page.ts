@@ -17,5 +17,4 @@ export class HomePage {
   getAllEvents() {
     this.evnSrv.getEvents().subscribe((datos: any[]) => this.events = datos);
   }
-
 }

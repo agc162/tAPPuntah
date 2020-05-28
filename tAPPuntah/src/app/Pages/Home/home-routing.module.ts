@@ -9,6 +9,10 @@ const routes: Routes = [
     component: HomePage
   },
   {
+    path: 'perfil',
+    loadChildren: () => import('../Perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
     path: 'evento/:idEvento',
     loadChildren: () => import('../Evento/evento-module').then( m => m.EventoPageModule)
   },

@@ -7,11 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'choose-image',
-    loadChildren: () => import('./Pages/choose-image/choose-image.module').then( m => m.ChooseImagePageModule)
-  },
-  {
-    path: 'eventos',
+    path: 'tAPPuntah',
     loadChildren: () => import('./Pages/Home/home.module').then( m => m.HomePageModule)
   }
 ];
