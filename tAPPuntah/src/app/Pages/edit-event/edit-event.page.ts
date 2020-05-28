@@ -62,6 +62,11 @@ export class EditEventPage {
       });
   }
 
+
+  public goToChooseImage() {
+    this.route.navigateByUrl(this.route.url + '/' + 'chooseImage');
+
+  }
   ngOnInit() {} 
 
 

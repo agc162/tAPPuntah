@@ -14,14 +14,14 @@
         <ion-item>
           <ion-label position="floating">Título: </ion-label>
           <br>
-          <ion-input type="text"  [(ngModel)]="nuevoTitulo" name="nuevoTitulo">{{event.title}} -> </ion-input>
+          <ion-input type="text"  [(ngModel)]="nuevoTitulo" name="nuevoTitulo">{{event.title}}</ion-input>
         </ion-item>
       
 
         <ion-item>
           <ion-label position="floating">Fecha: </ion-label>
           <br>
-          <ion-input type="text" [(ngModel)]="nuevaFecha" name="nuevaFecha">{{event.dateEvent}} -> </ion-input>
+          <ion-input type="text" [(ngModel)]="nuevaFecha" name="nuevaFecha">{{event.dateEvent}}</ion-input>
         </ion-item>
        
 
@@ -32,14 +32,14 @@
 
       <div style="text-align:center;">
         <ion-button icon-left size="large" color="tertiary"
-        (click)="doLogin()" >
+        (click)="goToChooseImage()" >
         Cambiar imagen 
         </ion-button>
       </div>
         <ion-item>
           <ion-label position="floating">Descripción: </ion-label>
           <br>
-          <ion-input type="text" [(ngModel)]="nuevaDescripcion" name="nuevaDescripcion"></ion-input>
+          <ion-input type="text" [(ngModel)]="nuevaDescripcion" name="nuevaDescripcion">{{event.description}}</ion-input>
         </ion-item>
         
 

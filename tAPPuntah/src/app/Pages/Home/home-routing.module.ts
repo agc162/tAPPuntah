@@ -19,7 +19,12 @@ const routes: Routes = [
   {
     path: 'evento/:idEvento/editEvent',
     loadChildren: () => import('../edit-event/edit-event.module').then( m => m.EditEventPageModule)
+  },
+  {
+    path: 'evento/:idEvento/editEvent/chooseImage',
+    loadChildren: () => import('../choose-image/choose-image.module').then( m => m.ChooseImagePageModule)
   }
+
 
 ];
 

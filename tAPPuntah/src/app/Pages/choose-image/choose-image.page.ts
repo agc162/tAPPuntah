@@ -7,11 +7,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./choose-image.page.scss'],
 })
 export class ChooseImagePage {
-  constructor() {
+  pathImg: string;
+  constructor(public router: Router) {
+    console.log('ruta: ' + router.url);
   }
 
-  public doLogin() {
-    //this.router.navigateByUrl('tabs/cards');
-    console.log('hola');
+  ionViewWillEnter() {
+   this.pathImg = 'leon.png'
+  }
+  public vistaEvento() {
+    //console.log(p.replace('comments/', ''));
+    let nuevaRuta;
+    let ruta = this.router.url;
+    nuevaRuta = ruta.replace('/editEvent/chooseImage','');
+    this.router.navigateByUrl(nuevaRuta);
+    console.log('nueva ruta: ' + nuevaRuta);
   }
 }
