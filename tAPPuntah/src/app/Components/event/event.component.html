@@ -1,0 +1,26 @@
+<ion-item>
+  <ion-thumbnail slot="start">
+    <img src="../../assets/images/{{ event.image }}">
+    <p style="font-size: x-small;"><strong>{{ event.datePublic }}</strong></p>
+  </ion-thumbnail>
+  <ion-label>
+    <p><strong>{{ event.user }}</strong></p>
+    <h2>{{ event.title }}</h2>
+    <p style="font-size: x-small;">{{ event.dateEvent }}</p>
+    <p>{{ event.description }}</p>
+  </ion-label>
+  <div class="buttonsItem">
+    <ion-button *ngIf="!event.like" fill="outline" slot="end" color="warning" (click)="event.like=true">
+      <ion-icon name="star-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="event.like" slot="end" color="warning" (click)="event.like=false">
+      <ion-icon name="star-outline"></ion-icon>
+    </ion-button>
+    <ion-button [href]="generateURLComment(event.id)" fill="outline" slot="end" color="primary">
+      <ion-icon name="chatbubble-outline"></ion-icon>
+    </ion-button>
+    <ion-button [href]="generateURL(event.id)" fill="outline" slot="end" color="medium">
+      <ion-icon name="information-circle-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-item>

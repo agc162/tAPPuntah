@@ -1,0 +1,12 @@
+<ion-item>
+  <ion-thumbnail slot="start">
+    <img [src]="'./assets/images/users/' + comment.avatar"/>
+  </ion-thumbnail>
+  <ion-label>
+    <h2><strong>{{ comment.user }}</strong></h2>
+    <p>{{ comment.date }}</p>
+    
+    <p>{{ comment.comment }}</p>
+    
+  </ion-label>
+</ion-item>

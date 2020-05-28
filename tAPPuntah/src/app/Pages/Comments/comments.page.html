@@ -1,0 +1,40 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <img [src]="'./assets/images/' + image" />
+      <ion-label>
+        <p><strong>
+            <h1>{{ title }}</h1>
+          </strong></p>
+        <p>{{ date }}</p>
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item class="cantComent">
+      <ion-label color="tertiary"><strong> {{ cantComments }} COMENTARIOS </strong></ion-label>
+    </ion-item>
+
+    <app-comment *ngFor="let item of comments" [comment]="item">
+
+    </app-comment>
+
+    <ion-card>
+
+      <form (ngSubmit)="mandarComentario()">
+      <ion-item>
+        <ion-label position="floating">Añadir comentario</ion-label>
+        <ion-input [(ngModel)]="nuevoComent" name="nuevoComent" type="text" placeholder=""></ion-input>
+
+        <ion-icon (click)="mandarComentario()" type="submit" slot="end" name="navigate-outline">
+        </ion-icon>
+
+      </ion-item>
+
+    </form>
+
+    </ion-card>
+
+  </ion-list>
+</ion-content>
