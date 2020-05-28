@@ -3,6 +3,7 @@ import { FormBuilder, Validators, FormGroup, FormControl } from '@angular/forms'
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { EventoService } from 'src/app/Services/Event/evento.service';
 import { Event } from 'src/app/Models/Event/event.model';
+import { identifierModuleUrl } from '@angular/compiler';
 
 
 @Component({
@@ -16,7 +17,7 @@ export class EditEventPage {
   event: Event = null;
   events = [];
   eventos: Event[];
-
+  editado: Boolean = false;
   nuevoTitulo;
   nuevaDescripcion;
   nuevaFecha;
@@ -32,34 +33,32 @@ export class EditEventPage {
         this.idEvent = params.get('idEvento');
       }
     )
-      console.log('id evento: ' + this.idEvent);
+    if(this.idEvent.includes('new')){
+      this.editado=true;
+      this.idEvent=this.idEvent.replace('new','');
+    }
     this.srvEvent.getEvents().subscribe((datos: Event[]) => {
       this.eventos=datos;
       for (const item of datos) {
         if(item.id == this.idEvent) {
           this.event = item;
+          if(this.editado == true){
+            this.event.image='2'+this.event.image;
+          }
         }
       }
     });
   }
 
   editarEvento(){
-
-      for (const item of this.eventos) {
-        if(item.id == this.idEvent) {
-          item.title = this.nuevoTitulo;
-          item.dateEvent = this.nuevaFecha;
-          item.description = this.nuevaDescripcion;
-        }
-      }
-      this.srvEvent.postEvents(this.eventos).subscribe((datos: Event[]) => {
-        this.eventos=datos;
-        for (const item of datos) {
-          if(item.id == this.idEvent) {
-            console.log(item.title);
-          }
-        }
-      });
+    let nuevaRuta;
+    if(this.editado==true){
+      nuevaRuta = 'eventos/evento/new'+this.idEvent;
+    }
+    else{
+      nuevaRuta = 'eventos/evento/'+this.idEvent;
+    }
+    this.route.navigateByUrl(nuevaRuta);
   }
 
 

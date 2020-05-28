@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
 
   constructor(public router: Router) {
-    console.log('path: ' + this.router.url);
    }
 
   ngOnInit() {}
