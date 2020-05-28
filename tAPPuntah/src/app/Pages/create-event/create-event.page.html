@@ -9,45 +9,38 @@
 
 <ion-content>
   <div class="ion-padding">
-       
-        <ion-item>
-          <ion-label position="floating">Título: </ion-label>
+    <ion-button color="tertiary" href="/tAPPuntah/perfil" fill="solid" >
+      <ion-icon item-right name="return-down-back-outline">
+      </ion-icon>
+    </ion-button>
+    
+    <ion-img style="width: 250px; height: 250px; margin-left: auto;
+    margin-right: auto;" src="../../assets/images/disney.png"></ion-img>
+  <div style="text-align:center;">
+    <ion-button style="margin-left: auto; margin-right: auto;" color="tertiary">Añadir</ion-button>
+  </div>
+    <ion-item>
+          <ion-label position="floating">Evento: </ion-label>
           <br>
           <ion-input type="text"  name="nuevoTitulo">DisneyLand Paris</ion-input>
         </ion-item>
-      
-
-        <ion-item>
-          <ion-label position="floating">Fecha: </ion-label>
-          <br>
-          <ion-input type="text" name="nuevaFecha">4/4/2021</ion-input>
-        </ion-item>
-       
-
-        <ion-img style="width: 300px; height: 300px; margin-left: auto;
-        margin-right: auto;" src="../../assets/images/disney.png"></ion-img>
-
-
-
-      <div style="text-align:center;">
-        <ion-button icon-left size="large" color="tertiary">
-        Cambiar imagen 
-        </ion-button>
-      </div>
         <ion-item>
           <ion-label position="floating">Descripción: </ion-label>
           <br>
           <ion-input type="text" name="nuevaDescripcion">Queríamos ir un grupo de 20 personas a este parque</ion-input>
         </ion-item>
-        
+
+        <ion-item>
+          <ion-label position="floating">Fecha Evento: </ion-label>
+          <br>
+          <ion-input type="text" name="nuevaFecha">4/4/2021</ion-input>
+        </ion-item>
 
      
         <div style="text-align:center;">
-            <ion-button  (click)="crearEvento()" size="large" color="tertiary" style="margin:10px;">Crear
+            <ion-button  (click)="crearEvento()" size="large" color="tertiary">Añadir
               </ion-button>            
-         
-            <ion-button size="large" href="/tAPPuntah/perfil" color="danger" style="margin:10px;">Cancelar
-              </ion-button>
+      
             </div>
   </div>
 </ion-content>
