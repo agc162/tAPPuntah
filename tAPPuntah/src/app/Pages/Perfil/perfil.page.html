@@ -1,0 +1,88 @@
+
+<ion-content fullscreen>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <div>
+          <img src="../../assets/images/user.png">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p>
+                  @DonJC
+                </p>
+              </ion-col>
+              <ion-col >
+                <ion-icon name="pencil-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                  Todos podemos convertirnos en héroes.
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button color="tertiary" shape="round" expand="full" fill="outline">Siguiendo a 529</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" shape="round" expand="full" fill="outline">Me siguen 12K</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p>{{events.length}} PUBLICACIONES</p>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button color="tertiary" shape="round" expand="full">Crear evento</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+  <ion-grid>
+      <ion-item *ngFor="let event of events">
+        <ion-col>
+          <ion-row>
+            <img src="../../assets/images/{{ event.image }}">
+            <div class="buttonsItem">
+              <ion-button *ngIf="!event.like" fill="outline" slot="end" color="warning" (click)="doFollow(event.id)">
+                <ion-icon name="star-outline"></ion-icon>
+              </ion-button>
+              <ion-button *ngIf="event.like" slot="end" color="warning" (click)="doUnfollow(event.id)">
+                <ion-icon name="star-outline"></ion-icon>
+              </ion-button>
+              <ion-button [href]="generateURLComment(event.id)" fill="outline" slot="end" color="primary">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+              </ion-button>
+              <ion-button [href]="generateURL(event.id)" fill="outline" slot="end" color="medium">
+                <ion-icon name="information-circle-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-row>
+        </ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+      </ion-item>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <a href="/tAPPuntah">
+    <ion-toolbar color="tertiary">
+      <ion-icon class="centrar" name="home"></ion-icon>
+    </ion-toolbar>
+  </a>
+</ion-footer>

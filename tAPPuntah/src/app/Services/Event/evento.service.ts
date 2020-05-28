@@ -8,6 +8,7 @@ import { Event } from 'src/app/Models/Event/event.model';
 })
 export class EventoService {
 
+  events: Event[] = [];
 
   constructor(private http: HttpClient) {
     console.log('Servicio evento en marcha...');
@@ -15,6 +16,13 @@ export class EventoService {
 
   getEvents() {
     return this.http.get('./../../assets/data/events.json');
+  }
+
+  getEventUser(user: string) : Event[] {
+    this.getEvents().subscribe((datos: Event[]) => {
+      this.events = datos.filter((dato: Event) => dato.user === user)
+    });
+    return this.events;
   }
 
 }
