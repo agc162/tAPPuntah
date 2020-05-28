@@ -14,7 +14,14 @@ export class MenuComponent implements OnInit {
   ngOnInit() {}
 
   isEventPage(): boolean {
-    return this.router.url.includes('tAPPuntah/evento');
+    let res;
+    if(this.router.url.includes('tAPPuntah/evento') && this.router.url.includes('new')==false){
+      res = true;
+    }
+    else{
+      res = false;
+    }
+    return res;
   }
 
   public goEditPage() {

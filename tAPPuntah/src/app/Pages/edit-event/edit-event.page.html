@@ -31,7 +31,7 @@
 
 
       <div style="text-align:center;">
-        <ion-button icon-left size="large" color="tertiary"
+        <ion-button *ngIf="!editado" icon-left size="large" color="tertiary"
         (click)="goToChooseImage()" >
         Cambiar imagen 
         </ion-button>
