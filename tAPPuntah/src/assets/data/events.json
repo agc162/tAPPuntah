@@ -10,32 +10,20 @@
         "like":false,
         "commments": [
             {
-                "user" : "@DonJC",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "10:45"
-            },
-            {
-                "user" : "@Mel",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "m.png",
-                "date": "11:00"
-            },
-            {
                 "user" : "@Dragon",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Bua! Yo tengo tienda para 4 si queréis podemos compartir.",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
                 "user" : "@Prieto",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Genial @Dragon, que yo no tengo tienda, pero pongo mesita para fuera.",
                 "avatar": "h.png",
                 "date": "11:20"
             },
             {
                 "user" : "@Alicia",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Qué guay! Me apunto!!",
                 "avatar": "m.png",
                 "date": "11:35"
             }
@@ -52,32 +40,32 @@
         "like":false,
         "commments": [
             {
-                "user" : "@DonJC",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "10:45"
-            },
-            {
                 "user" : "@Mel",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Yo llevo cervezas. Allí estaré!!",
                 "avatar": "m.png",
                 "date": "11:00"
             },
             {
                 "user" : "@Dragon",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Cuando se compran las entradas?",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
                 "user" : "@Prieto",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Diseño las camis?",
                 "avatar": "h.png",
                 "date": "11:20"
             },
             {
+                "user" : "@Mel",
+                "comment": "Yo también me apunto a lo de diseñar las camisetas.",
+                "avatar": "m.png",
+                "date": "11:00"
+            },
+            {
                 "user" : "@Alicia",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Yo ya tengo la entrada!!",
                 "avatar": "m.png",
                 "date": "11:35"
             }
@@ -94,32 +82,20 @@
         "like":false,
         "commments": [
             {
-                "user" : "@DonJC",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "10:45"
-            },
-            {
                 "user" : "@Mel",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Qué romántico!!",
                 "avatar": "m.png",
                 "date": "11:00"
             },
             {
-                "user" : "@Dragon",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "11:15"
-            },
-            {
                 "user" : "@Prieto",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Sí, pero es que estoy por Madrid y siempre he querido verlo.",
                 "avatar": "h.png",
                 "date": "11:20"
             },
             {
                 "user" : "@Alicia",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Venga! Yo estoy por Madrid también, te acompaño ;)",
                 "avatar": "m.png",
                 "date": "11:35"
             }
@@ -136,32 +112,26 @@
         "like":false,
         "commments": [
             {
-                "user" : "@DonJC",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "10:45"
-            },
-            {
                 "user" : "@Mel",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Si vamos miércoles, me apunto. Que hay que ahorrar xD",
                 "avatar": "m.png",
                 "date": "11:00"
             },
             {
                 "user" : "@Dragon",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Metemos chuches de estrangis, no?",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
                 "user" : "@Prieto",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "No lo dudes, bro!",
                 "avatar": "h.png",
                 "date": "11:20"
             },
             {
                 "user" : "@Alicia",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Venga! El miércoles que viene ;)",
                 "avatar": "m.png",
                 "date": "11:35"
             }
@@ -178,32 +148,56 @@
         "like":false,
         "commments": [
             {
-                "user" : "@DonJC",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
-                "avatar": "h.png",
-                "date": "10:45"
-            },
-            {
                 "user" : "@Mel",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "No he hecho mucha escalada, pero venga, vamos a intentarlo.",
                 "avatar": "m.png",
                 "date": "11:00"
             },
             {
                 "user" : "@Dragon",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Siempre nos echamos una mano entre todos.",
                 "avatar": "h.png",
                 "date": "11:15"
             },
             {
                 "user" : "@Prieto",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Sí, puede ser divertido.",
                 "avatar": "h.png",
                 "date": "11:20"
             },
             {
                 "user" : "@Alicia",
-                "comment": "Lorem ipsum dolor sit amet consectetuer",
+                "comment": "Yo tengo material para compartir, si queréis me lo puedo llevar para quien no tenga.",
+                "avatar": "m.png",
+                "date": "11:35"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Camino de Santiago",
+        "user": "@Mel",
+        "datePublic": "15-06-2020",
+        "dateEvent": "10-10-2020",           
+        "description": "Formo un grupo para ir al Camino de Sa...",
+        "image": "rutas-del-camino-de-santiago.jpg",
+        "like":false,
+        "commments": [
+            {
+                "user" : "@Dragon",
+                "comment": "Pff... para esa fecha se podrá?",
+                "avatar": "h.png",
+                "date": "11:15"
+            },
+            {
+                "user" : "@Prieto",
+                "comment": "Yo voy con la BMX, vale? Ya me alcanzáis después jajajaja",
+                "avatar": "h.png",
+                "date": "11:20"
+            },
+            {
+                "user" : "@Alicia",
+                "comment": "Cuando acabe la cuarentena necesitaré estirar las patas, así que adelante!",
                 "avatar": "m.png",
                 "date": "11:35"
             }

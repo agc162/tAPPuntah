@@ -45,4 +45,19 @@ export class EventoPage implements OnInit {
 
   ngOnInit() { }
 
+  doFollow(post: string){
+    for (const item of this.events) {
+      if(item.id === post) {
+        item.like = true;
+      }
+    }
+  }
+
+  doUnfollow(post: string){
+    for (const item of this.events) {
+      if(item.id === post) {
+        item.like = false;
+      }
+    }
+  }
 }

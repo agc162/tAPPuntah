@@ -50,7 +50,7 @@ export class CommentsPage {
   }
 
   mandarComentario() {
-    this.addComment.user = '@User123'
+    this.addComment.user = '@DonJC'
     this.addComment.comment = this.nuevoComent;
     this.addComment.avatar = 'user.png';
     this.addComment.date = '12:00';

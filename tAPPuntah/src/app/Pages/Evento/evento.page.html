@@ -1,21 +1,27 @@
 <app-menu></app-menu>
 
-<ion-content *ngIf="event">
+<ion-content *ngIf="event"  class="bell-img">
   <ion-text align="center" color="dark">
     <h1>{{ event.title }}</h1>
   </ion-text>
   <ion-text align="center" color="medium">  
-      <!-- <h5>{{ date | date: 'dd/MM/yyyy' }} </h5>  -->
       <h5>{{ event.dateEvent }}</h5>
   </ion-text>
+  <ion-label align="center" class="img-event" color="medium">Publicado el {{event.datePublic}} por <strong>{{event.user}}</strong> </ion-label>
   <ion-img class="img-event" [src]="'./assets/images/' + event.image"></ion-img>
-  <div class="bell-img">
+  <div class="bell-img"> 
     
-    <ion-icon size="large" color="warning" name="star-outline"></ion-icon>
-    <ion-icon size="large" color="primary" name="chatbubble-outline"></ion-icon>
+    <ion-button *ngIf="!event.like" fill="outline" slot="end" color="warning" (click)="doFollow(event.id)">
+      <ion-icon name="star-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="event.like" slot="end" color="warning" (click)="doUnfollow(event.id)">
+      <ion-icon name="star-outline"></ion-icon>
+    </ion-button>
 
+    <ion-button [href]="'/tAPPuntah/evento/' + event.id + '/comments'" fill="outline" slot="end" color="primary">
+      <ion-icon name="chatbubble-outline"></ion-icon>
+    </ion-button>
     
-    <ion-label color="medium">Publicado el {{event.datePublic}} por {{event.user}} </ion-label>
   </div>
 
   <div class="desc-event" >
